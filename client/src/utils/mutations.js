@@ -11,8 +11,8 @@ export const loginUser = gql`
         }
     }
 `;
-
-export const createUser = gql`
+//might have to change to caps
+export const CREATE_USER = gql`
     mutation addUser($username: String!, $email: String!, $password: String!) {
         addUser(username: $username, email: $email, password: $password) {
             token
